@@ -1,0 +1,18 @@
+[project]
+# torch 2.2.2 is the last release with Intel-Mac wheels; the other pins are what it works with
+dependencies = [
+    "ipykernel",
+    "matplotlib<3.10",
+    "numpy<2",
+    "pillow",
+    "plotly",
+    "scipy<1.14",
+    "torch==2.2.2",
+    "transformers<4.50",
+]
+name = "ceia-vpc3d"
+requires-python = "==3.12.*"
+version = "0.1.0"
+
+[tool.uv]
+package = false
